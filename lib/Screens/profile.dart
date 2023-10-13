@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mixcat_player/Screens/sidebar.dart';
+
 
 class Profile extends StatelessWidget {
   @override
@@ -15,6 +17,7 @@ class Profile extends StatelessWidget {
           ),
         ],
       ),
+      drawer: Sidebar(),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(30),
         child: Column(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mixcat_player/Screens/sidebar.dart';
+
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -20,6 +22,7 @@ class _DashboardState extends State<Dashboard> {
           IconButton(onPressed: (){}, icon:Icon(Icons.person)),
         ],
       ),
+      drawer: Sidebar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
