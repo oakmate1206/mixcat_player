@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mixcat_player/Screens/sidebar.dart';
 
 
 class Screens extends StatelessWidget {
@@ -16,6 +17,7 @@ class Screens extends StatelessWidget {
           ),
         ],
       ),
+      drawer: Sidebar(),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(30),
         child: Column(
@@ -116,7 +118,7 @@ class Screens extends StatelessWidget {
                                   onPressed: () {},
                                   style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(
-                                        Colors.green), // Change button color
+                                        Color.fromARGB(255, 52, 178, 192)), // Change button color
                                   ),
                                   child: Text(
                                     'PLAYERS',
@@ -139,7 +141,7 @@ class Screens extends StatelessWidget {
                       width: 70,
                       height: 50,
                       decoration: BoxDecoration(
-                        color: Colors.green, // Small floating container
+                        color: Color.fromARGB(255, 52, 178, 192), // Small floating container
                         borderRadius: BorderRadius.only(
                           bottomLeft:
                               Radius.circular(10), // Add bottom-left radius
@@ -176,7 +178,7 @@ class Screens extends StatelessWidget {
                             "Screen Code: jnd98",
                             style: TextStyle(
                                 fontSize: 12,
-                                color: const Color.fromARGB(255, 157, 154, 154)),
+                                color: Color.fromARGB(255, 52, 178, 192)),
                           ),
                           Text(
                             "Screen - QR 492",
@@ -189,7 +191,7 @@ class Screens extends StatelessWidget {
                                   onPressed: () {},
                                   icon: Icon(
                                     Icons.add,
-                                    color: Colors.purple,
+                                    color: Color.fromARGB(255, 52, 178, 192),
                                   )),
                               Text(
                                 "No Playlist - Add",
@@ -233,7 +235,7 @@ class Screens extends StatelessWidget {
                                   onPressed: () {},
                                   style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(
-                                        Colors.purple), // Change button color
+                                       Color.fromARGB(255, 52, 178, 192)), // Change button color
                                   ),
                                   child: Text(
                                     'EDIT',
@@ -246,7 +248,7 @@ class Screens extends StatelessWidget {
                                   onPressed: () {},
                                   style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(
-                                        Colors.purple), // Change button color
+                                       Color.fromARGB(255, 52, 178, 192)), // Change button color
                                   ),
                                   child: Text(
                                     'VIEW SCREEN',
@@ -269,8 +271,7 @@ class Screens extends StatelessWidget {
                       width: 70,
                       height: 50,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(
-                            255, 227, 155, 30), // Small floating container
+                        color: Color.fromARGB(255, 52, 178, 192), // Small floating container
                         borderRadius: BorderRadius.only(
                           bottomLeft:
                               Radius.circular(10), // Add bottom-left radius
@@ -306,7 +307,7 @@ class Screens extends StatelessWidget {
                             "Screen Code: jnd98",
                             style: TextStyle(
                                 fontSize: 12,
-                                color: const Color.fromARGB(255, 157, 154, 154)),
+                                color: Color.fromARGB(255, 52, 178, 192)),
                           ),
                           Text(
                             "Screen - QR 492",
@@ -319,7 +320,7 @@ class Screens extends StatelessWidget {
                                   onPressed: () {},
                                   icon: Icon(
                                     Icons.edit,
-                                    color: Colors.purple,
+                                    color:Color.fromARGB(255, 52, 178, 192),
                                   )),
                               Text(
                                 "No Playlist - Add",
@@ -363,7 +364,7 @@ class Screens extends StatelessWidget {
                                   onPressed: () {},
                                   style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(
-                                        Colors.purple), // Change button color
+                                        Color.fromARGB(255, 52, 178, 192)), // Change button color
                                   ),
                                   child: Text(
                                     'EDIT',
@@ -376,7 +377,7 @@ class Screens extends StatelessWidget {
                                   onPressed: () {},
                                   style: ButtonStyle(
                                     backgroundColor: MaterialStateProperty.all(
-                                        Colors.purple), // Change button color
+                                        Color.fromARGB(255, 52, 178, 192)), // Change button color
                                   ),
                                   child: Text(
                                     'VIEW SCREEN',
@@ -399,8 +400,7 @@ class Screens extends StatelessWidget {
                       width: 70,
                       height: 50,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(
-                            255, 227, 155, 30), // Small floating container
+                        color: Color.fromARGB(255, 52, 178, 192), // Small floating container
                         borderRadius: BorderRadius.only(
                           bottomLeft:
                               Radius.circular(10), // Add bottom-left radius
