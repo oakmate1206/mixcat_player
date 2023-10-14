@@ -7,7 +7,13 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Proflie'),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: Container(
+            width: 85,
+            child: Image.asset(
+              "assets/logo.png",
+            )),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),

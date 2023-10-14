@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:mixcat_player/Screens/Screen_monitoring.dart';
 import 'package:mixcat_player/Screens/appstore.dart';
+import 'package:mixcat_player/Screens/profile.dart';
 import 'package:mixcat_player/Screens/screens.dart';
+
+import 'Login.dart';
+import 'dashboard_screen.dart';
+import 'downloadapp.dart';
 
 class Sidebar extends StatelessWidget {
   @override
@@ -11,13 +16,16 @@ class Sidebar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: Image.network("src"),
+            child: Image.asset("assets/logo.png"),
           ),
           ListTile(
             leading: Icon(Icons.account_box_outlined),
             title: Text('Dashboard'),
             onTap: () {
-              // MaterialPageRoute(builder: (context) => Dashboard());
+               Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Dashboard()),
+            );
             },
           ),
           ListTile(
@@ -54,21 +62,30 @@ class Sidebar extends StatelessWidget {
             leading: Icon(Icons.cloud_download),
             title: Text('Download App'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Download_app()),
+            );
             },
           ),
           ListTile(
             leading: Icon(Icons.person),
             title: Text('Profile'),
             onTap: () {
-              Navigator.pop(context);
-            },
+               Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Profile()),
+            );
+              },
           ),
           ListTile(
             leading: Icon(Icons.logout),
             title: Text('Logout'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
             },
           ),
         ],

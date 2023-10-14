@@ -17,7 +17,6 @@ class _MonitoringState extends State<Monitoring> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.white,
-        leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
         title: Container(
             width: 85,
             child: Image.asset(

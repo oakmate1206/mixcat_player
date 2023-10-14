@@ -7,7 +7,13 @@ class Appstore extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('App Store'),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: Container(
+            width: 85,
+            child: Image.asset(
+              "assets/logo.png",
+            )),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
