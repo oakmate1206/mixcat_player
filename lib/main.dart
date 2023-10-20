@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mixcat_player/Screens/globallibrary.dart';
+import 'package:mixcat_player/Screens/imagesvideos.dart';
+import 'package:mixcat_player/Screens/music.dart';
+import 'package:mixcat_player/Screens/playlists.dart';
 import 'package:mixcat_player/Screens/splash.dart';
 
 import 'Screens/Screen_monitoring.dart';
@@ -21,7 +25,7 @@ class MyApp extends StatelessWidget {
       title: 'Mixcat_Sign_Player',
       theme: ThemeData(
         scaffoldBackgroundColor: const Color.fromARGB(255, 213, 213, 213),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xff409ec4)),
         useMaterial3: true,
       ),
       home: SplashScreen(),

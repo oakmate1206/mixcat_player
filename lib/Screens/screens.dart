@@ -7,15 +7,12 @@ class Screens extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Screens'),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {
-              // Handle search action
-            },
-          ),
-        ],
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: Container(
+          width: 85,
+          child: Image.asset("assets/logo.png"),
+        ),
       ),
       drawer: Sidebar(),
       body: SingleChildScrollView(

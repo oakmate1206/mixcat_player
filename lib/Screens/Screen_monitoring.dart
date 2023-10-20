@@ -13,7 +13,6 @@ class _MonitoringState extends State<Monitoring> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.white,
@@ -236,18 +235,6 @@ class _MonitoringState extends State<Monitoring> {
             ),
           ]),
         ]),
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Color(0xff409ec4),
-        onPressed: () {},
-        label: Text(
-          "Help",
-          style: TextStyle(color: Colors.white),
-        ),
-        icon: Icon(
-          Icons.message_outlined,
-          color: Colors.white,
-        ),
       ),
     );
   }
